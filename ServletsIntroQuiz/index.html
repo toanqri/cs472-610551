@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Servlets Intro Quiz</title>
+        <link href="quiz.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+            <h1>Introduction to Servlets Quiz</h1>
+            <p>
+                <strong>1. What is the difference between a web server and a web container?</strong><br>
+                - Web server: serves static content - files, images, pdfs,
+                videos, exactly as they are on the server machine, 
+                can't handle behavior like login, data lookups,... 
+                and can't save data to the server.<br>
+                - Web container: manages servlets, jsp.
+            </p>
+            <p>
+                <strong>2. What is a servlet?</strong><br>
+                - A servlet is a Java class that extends the capabilities of
+                        servers that host applications access by means of a
+                        request-response programming model.
+            </p>
+            <p>
+                <strong>3. How do web servers and web containers interact with servlets?</strong><br>
+                - When a request comes to the web server, if the server sees
+                the request is for a servlet, it passes the request data to the
+                servlet container.<br>
+                - The servlet container locates the servlet, creates request
+                and response objects and passes them to the servlet, and
+                returns to the web server the response stream that the
+                servlet produces.
+            </p>
+            <p>
+                <strong>4. Who creates request objects?</strong><br>
+                - Servlet container
+            </p>
+            <p>
+                <strong>5. What are the states in the servlet lifecycle?</strong><br>
+                - Load<br>
+                - Create<br>
+                - Init<br>
+                - Service<br>
+                - Destroy<br>
+            </p>
+            <p>
+                <strong>6. Who calls init and when?</strong><br>
+                - Servlet container calls init after load servlet and instantiate servlet.
+            </p>
+            <p>
+                <strong>7. Which of init, service, and doGet should you override?</strong><br>
+                - doGet
+            </p>
+            <p>
+                <strong>8. In what sense are servlets multi-threaded?</strong><br>
+                - Each request runs ina separate thread, new thread will be created 
+                for every request and call service() on the thread.
+            </p>
+            <p>
+                <strong>9. What are the implications of this for servlet instance variables? </strong><br>
+                - Only have 1 instance of servlet and all thread share instance variables.
+            </p>
+    </body>
+</html>

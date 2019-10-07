@@ -1,0 +1,105 @@
+body {
+    background-color: burlywood;
+    color: white;
+}
+
+.introduction {
+    font-family: 'Courier New';
+    font-size: 15pt;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    color: greenyellow;
+}
+
+p.introduction strong {
+    color: red;
+}
+
+hr {
+    color: black;
+    margin: 20px 5px 20px 5px;
+}
+
+h1, h3 {
+    font-family: Tahoma;
+    color: rgb(24, 145, 214);
+}
+
+ul {
+    color: teal;
+}
+
+.classes {
+    color: darkcyan;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+.movies {
+    color: olive;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.movies-description {
+    color: palevioletred;
+    font-style: italic;
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+.neighbor {
+    color: purple;
+    font-family: 'Gill Sans';
+    font-size: 13pt;
+}
+
+.mood {
+    font-family: 'Lucida Sans';
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 0px 40px 0px 40px;
+}
+
+#happy {
+    color: yellow;
+}
+
+#sad {
+    color: gray;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p::first-letter {
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+dl {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 13pt;
+    color: red;
+}
+
+ol {
+    padding: 0px 40px 0px 40px;
+    transform: rotate(180deg);
+}
+
+ol > li {
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://mumstudents.org/cs472/2017-12-BL/Lectures/6/grades.html -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="grades.css" type="text/css" rel="stylesheet" />
+        <title>Retrieve Grade</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Retrieve your grade</legend>
+            <form action="http://mumstudents.org/params.php">
+                <label>
+                    <strong>Name:</strong>
+                    <input type="text" name="name" required />
+                </label>
+                <br/>
+    
+                <label>
+                    <strong>Student ID:</strong>
+                    <input type="text" name="studentId" />
+                </label>
+                <br/>
+    
+                <strong>Assignment:</strong>
+                <select name="assignment">
+                    <option selected>Assignment 1</option>
+                    <option>Assignment 2</option>
+                    <option>Assignment 3</option>
+                </select>
+                <br/>
+    
+                <strong>Entry:</strong>
+                <label><input type="radio" name="entry" value="August 2019" checked /> August 2019</label>
+                <label><input type="radio" name="entry" value="May 2019" /> May 2019</label>
+                <label><input type="radio" name="entry" value="February 2019" /> February 2019</label>
+                <br/>
+    
+                <strong>Are you looking for your own grade?</strong>
+                <input type="checkbox" name="honest" />
+                <br/>
+                
+                <input type="submit" value="Get Grade!" />
+            </form>
+        </fieldset>
+
+        <footer>
+            <a href="http://validator.w3.org/check/referer">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="validate-html"/>
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="validate-css"/>
+            </a>
+        </footer>
+    </body>
+</html>
