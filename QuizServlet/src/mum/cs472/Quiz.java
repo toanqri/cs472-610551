@@ -37,7 +37,10 @@ public class Quiz {
     }
 
     public String getNumberSequence() {
-        return questions[currentQuestion];
+        if (currentQuestion <= 4) {
+            return questions[currentQuestion];
+        }
+        return null;
     }
 
     public void checkAnswer(int answer) {
